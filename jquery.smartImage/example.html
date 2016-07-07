@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Loads images retries till available</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartImage.min.js"></script>
+</head>
+<body>
+<img id="myImage" src="" width="160" height="200" border="1" />
+</body>
+<script type="text/javascript">
+$('#myImage').smartImage({
+	"load-image": 'images/available.jpg',
+	"place-holder": 'images/loading.png',
+	"error-image": 'images/unavailable.jpg',
+	"retry-max": 5,
+	"retry-delay": 5000
+});
+</script>
+</html>
