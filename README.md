@@ -1,2 +1,2 @@
 # jquery.smartImage
-This plugin tries to load an image. If loading an image is failed then it shows up the error image. This plugin tries to load the image for a given number of attempts, which is configurable.
+This plugin is mostly useful when you want to show an image on the webpage which is still not ready or getting processed on the server side but you know it will be available very soon. Instead of displaying a broker image, this plugin displays a place holder image till the image on the server side is available. Once the image is available, this plugin display the available image.
